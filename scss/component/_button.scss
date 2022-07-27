@@ -1,0 +1,39 @@
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  
+  .default {
+    background-color: $color-bg-default;
+  }
+  
+  .error {
+    background-color: $color-bg-error;
+  }
+  
+  .info {
+    background-color: $color-bg-info;
+  }
+  
+  .success {
+    background-color: $color-bg-success;
+  }
+  
+  .warning {
+    background-color: $color-bg-warning;
+  }
+  @media (min-width: $mqbreak) {
+    .btn {
+      padding: 10px 30px;
+    }
+    
+    .btn + .btn {
+      margin-left: 10px;
+    }
+    
+  }
