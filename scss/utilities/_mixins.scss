@@ -1,8 +1,11 @@
-@mixin images {
+@mixin images(
+    $mtop: null,
+    $mw: null,
+    $mh: null) {
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    max-width: 100%; 
-    max-height: 100%;
+    margin-right: auto;    
+    margin-top: $mtop;
+    max-width: $mw;
+    max-height: $mh;
 }
