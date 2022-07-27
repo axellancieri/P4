@@ -68,7 +68,7 @@
     flex-basis: 100%;
   }
 
-@media (min-width: 768px) {
+@media (min-width: $mqbreak) {
 
   .container {
     max-width: 1400px;
