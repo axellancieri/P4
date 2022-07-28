@@ -1,16 +1,16 @@
 .img-avatar {
-    @include images(10px, 100%, 100%);
+    @include objplacement(10px, 100%, 100%);
   }
   
   .img-frame {
-    @include images(10px, 100%);
+    @include objplacement(10px, 100%);
     padding: 13px;
     border: 1px solid #ccc;
   }
   
   .img-logo {
-    @include images;
-    @media (min-width: $mqbreak) {
+    @include objplacement;
+    @include mq($break) {
         margin-left: initial;
         margin-right: initial;    
     }

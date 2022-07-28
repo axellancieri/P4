@@ -1,11 +1,17 @@
 .container {
     padding: 0 10px;
+    @include mq($break) {
+        @include objplacement($mw: 1400px);
   }
+}
   
   .row {
     display: flex;
     flex-direction: column;
     padding: 1em 10px;
+    @include mq($break) {
+      flex-direction: row;
+    }
   }
   
   [class^=col] {
@@ -14,6 +20,12 @@
     min-height: 25px;
     padding: 10px;
     border-radius: 5px;
+    @include mq($break) {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        align-items: center;
+      }
   }
   
   .theme {
@@ -24,41 +36,27 @@
     flex-basis: 100%;
   }
 
-@media (min-width: $mqbreak) {
-
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
   .centered {
-    @include images;
+    @include mq($break) {
+     @include objplacement;
   }
-  
-  .row {
-    flex-direction: row;
-  }
-  
-  [class^=col] {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center;
-  }
-  
+}
+
   [class^=col] + [class^=col] {
-    margin-left: 10px;
+    @include mq($break) {
+      margin-left: 10px;
   }
-  
+}
+
+@media (min-width: $break) {
+
   .col-1 {
     flex-basis: 8.33%;
   }
   
   .col-2 {
     flex-basis: 16.67%;
-  }
+  } 
   
   .col-3 {
     flex-basis: 25.00%;

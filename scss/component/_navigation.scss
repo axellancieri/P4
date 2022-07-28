@@ -17,7 +17,7 @@
         background-color: #58e1c1;
       }
     }
-  @media (min-width: $mqbreak) {
+    @include mq($break) {
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;

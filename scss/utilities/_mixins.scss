@@ -1,4 +1,5 @@
-@mixin images(
+// Images
+@mixin objplacement(
     $mtop: null,
     $mw: null,
     $mh: null) {
@@ -9,12 +10,18 @@
     max-width: $mw;
     max-height: $mh;
 }
-// Grid columns mixin
+// Grid columns
 @mixin themes ($map) {
     @each $colcolors, $gridbtncolors in $map {
         &-#{$colcolors} {
           background-color: $gridbtncolors;
         }
-      }
-      
+    }
 }
+
+// Media queries
+@mixin mq($break) {
+     @media (min-width: $break) {
+      @content;
+      }
+} 
