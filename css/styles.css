@@ -310,6 +310,7 @@ template {
 * {
   font-family: "Lato", sans-serif;
   box-sizing: border-box;
+  color: #777;
 }
 
 p {
@@ -514,27 +515,6 @@ a {
   text-transform: uppercase;
   border-radius: 5px;
 }
-
-.default {
-  background-color: #51ddfc;
-}
-
-.error {
-  background-color: #e4757a;
-}
-
-.info {
-  background-color: #927bc1;
-}
-
-.success {
-  background-color: #63cc82;
-}
-
-.warning {
-  background-color: #fd7856;
-}
-
 @media (min-width: 768px) {
   .btn {
     padding: 10px 30px;
@@ -543,6 +523,27 @@ a {
     margin-left: 10px;
   }
 }
+
+.btn-default {
+  background-color: #51ddfc;
+}
+
+.btn-error {
+  background-color: #e4757a;
+}
+
+.btn-info {
+  background-color: #927bc1;
+}
+
+.btn-success {
+  background-color: #63cc82;
+}
+
+.btn-warning {
+  background-color: #fd7856;
+}
+
 .form {
   flex-basis: 100%;
 }
