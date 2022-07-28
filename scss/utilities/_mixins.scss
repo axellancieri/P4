@@ -9,3 +9,12 @@
     max-width: $mw;
     max-height: $mh;
 }
+// Grid columns mixin
+@mixin themes ($map) {
+    @each $colcolors, $gridbtncolors in $map {
+        &-#{$colcolors} {
+          background-color: $gridbtncolors;
+        }
+      }
+      
+}
