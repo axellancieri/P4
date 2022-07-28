@@ -16,10 +16,11 @@
 @each $state, $btnbgcolor in $button-state-color {
   .btn-#{$state} {
     background-color: $btnbgcolor;
-    &:hover, &:target {
-      background-color: lighten(get-map($button-state-color), 15%);
+    &:hover {
+      background-color: lighten($btnbgcolor, 15%);
     }
   }
+
   
 }
 
