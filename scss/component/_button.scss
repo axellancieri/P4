@@ -6,21 +6,21 @@
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
-    // &:hover, &:target {
-    //   background-color: $button-state-color-ligth;
-    // }
     @media (min-width: $mqbreak) {
         padding: 10px 30px;      
         & + .btn {
           margin-left: 10px;
         }
-      
     }
   }
-  @each $state, $btnbgcolor in $button-state-color {
-    .btn-#{$state} {
-      background-color: $btnbgcolor;
+@each $state, $btnbgcolor in $button-state-color {
+  .btn-#{$state} {
+    background-color: $btnbgcolor;
+    &:hover, &:target {
+      background-color: lighten(get-map($button-state-color), 15%);
     }
   }
   
+}
+
 
