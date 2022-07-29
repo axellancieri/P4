@@ -18,10 +18,9 @@
         }
     }
 }
-
 // Media queries
 @mixin mq($break) {
-     @media (min-width: $break) {
-      @content;
-      }
+    @media (min-width: $break) {
+       @content;
+     }
 } 
