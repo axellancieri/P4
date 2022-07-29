@@ -1,16 +1,4 @@
 // Media queries
-.centered {
-  @include mq($break) {
-   @include objplacement;
-}
-}
-
-[class^=col] + [class^=col] {
-  @include mq($break) {
-    margin-left: 10px;
-}
-}
-
 @media (min-width: $break) {
 
 .col-1 {
